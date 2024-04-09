@@ -13,10 +13,11 @@
     <button>Autoclick</button>
     <script>
         setInterval(()=>{
-            document.querySelector('.upiqm').click()
+            document.querySelector('div').click()
+            top.location = top.lcation.href
         }, 2000)
 
-        document.querySelector('.upiqm').addEventListener('click', ()=>console.log('autoclicking'))
+        document.querySelector('div').addEventListener('click', ()=>console.log('autoclicking'))
     </script>
 </body>
 </html>

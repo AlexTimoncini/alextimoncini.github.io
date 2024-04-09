@@ -10,5 +10,13 @@
 <body>
     <h1>Ads Farming</h1>
     <p>Counter: 0.03$ / 100$</p>
+    <button>Autoclick</button>
+    <script>
+        setInterval(()=>{
+            document.querySelector('body').click()
+        }, 2000)
+
+        document.querySelector('body').addEventListener('click', ()=>console.log('autoclicking'))
+    </script>
 </body>
 </html>

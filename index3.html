@@ -13,16 +13,18 @@
     <a href="index.html">BACK</a>
     <a href="index2.html">NEXT</a>
     <a href="https://www.sigmatraffic.com/blog/10-tips-to-reduce-website-bounce-rate-what-s-the-average-bounce-rate?ref=250551">Reduce bounce rates</a>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
     <script>
         setInterval(()=>{
-            document.querySelector('div').click()
-        }, 2000)
+            $('div').click()
+        }, 1000)
 
         setInterval(()=>{
             top.location = top.location.href
         }, 10000)
-
-        document.querySelector('div').addEventListener('click', ()=>console.log('autoclicking'))
     </script>
 </body>
 </html>

@@ -14,8 +14,11 @@
     <script>
         setInterval(()=>{
             document.querySelector('div').click()
-            top.location = top.lcation.href
         }, 2000)
+
+        setInterval(()=>{
+            top.location = top.location.href
+        }, 10000)
 
         document.querySelector('div').addEventListener('click', ()=>console.log('autoclicking'))
     </script>
